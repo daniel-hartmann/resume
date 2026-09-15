@@ -1,0 +1,64 @@
+name: Deploy resume to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - resume.yaml
+      - resume.css
+      - templates/**
+      - scripts/generate.py
+      - .github/workflows/deploy.yml
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v10
+
+      - name: Set up Chrome
+        id: setup-chrome
+        uses: browser-actions/setup-chrome@v1
+
+      - name: Generate resume.html, resume.md, and resume.pdf
+        env:
+          RESUME_CHROME_PATH: ${{ steps.setup-chrome.outputs.chrome-path }}
+        run: uv run scripts/generate.py
+
+      - name: Assemble site
+        run: |
+          mkdir -p _site
+          cp resume.html resume.css resume.md resume.pdf _site/
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

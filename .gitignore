@@ -1,0 +1,14 @@
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.log
+/_site/
+
+# Full-contact artifacts (real email/phone) — never published, never committed.
+resume-full.html
+resume-full.pdf
+
+# uv / Python
+.venv/
+__pycache__/

@@ -1,0 +1,152 @@
+name: Daniel Hartmann
+title: "Software Engineer · Python / Backend / Automation scripting"
+summary: >
+  Senior Software Engineer with 19+ years of experience building scalable backend systems,
+  SaaS platforms, and data-driven products. Strong background in Python, Linux, cloud infrastructure
+  and production-grade systems.
+
+contact:
+  email: daniel.hnn@gmail.com
+  phone: "+55 51 99317 4414"
+  location: Porto Alegre, RS, Brazil
+  linkedin:
+    label: linkedin.com/in/danielhnn
+    url: https://www.linkedin.com/in/danielhnn/
+
+skills:
+  - Python
+  - Bash script
+  - PostgreSQL
+  - JavaScript
+  - HTML5
+  - CSS3
+  - JQuery
+  - MySQL
+  - Django
+  - FastAPI
+  - Docker
+  - Git
+  - Linux
+  - Node.js
+
+education:
+  - degree: Postgraduate Specialization in Digital Game Design
+    institution: PUCRS
+    location: Porto Alegre, RS, Brazil
+    period: 2026 – 2027 (in progress)
+
+  - degree: B.S. Computer Engineering
+    institution: Centro Universitário Univates
+    location: Lajeado, RS, Brazil
+    period: "2011"
+    description: >
+      Final paper was a web application for creating ideas, using collective intelligence
+      concepts like recommendations and keywords extraction.
+
+  - degree: Applied Computer Science
+    institution: Academic Exchange at Fachhochschule Gelsenkirchen
+    location: Gelsenkirchen, Germany
+    period: 09/2008 – 02/2009
+    bullets:
+      - Programming Project (Programmierprojekt)
+      - Game Programming and Multi-agent Systems
+      - "Trainee at the Institute for Internet Security – if(is) (Institute für Internet-sicherheit, http://www.internet-sicherheit.de/)"
+
+languages:
+  - language: Portuguese
+    level: native
+  - language: English
+    level: fluent
+
+links:
+  - label: Personal projects on GitHub
+    url: https://github.com/daniel-hartmann/
+
+interests:
+  - Framework Development
+  - Game Development
+  - Coding Standards
+  - Music Production
+  - Science Fiction
+  - Video Games
+
+experience:
+  - role: Software Engineer
+    company: Keystone Strategy
+    location: USA
+    period: 06/2023 – Present
+    description: >
+      Delivered across AI product workflows, cloud infrastructure, developer tooling, and
+      full-stack application development for enterprise clients.
+    bullets:
+      - Designed, shipped, and maintained LLM-powered product workflows, backed by performance (Locust) and end-to-end (Selenium) testing for reliability at scale.
+      - Built and hardened cloud infrastructure with Terraform and Kubernetes, improving deployment reliability across multiple internal platforms.
+      - Created developer tooling for repository analysis, release automation, and reusable project scaffolding, streamlining engineering workflows across teams.
+      - "Contributed full-stack features to a client-facing catalog application: background workers, database migrations, and deploy-on-merge CI/CD pipelines."
+    tags: [Python, TypeScript, JavaScript, LangChain, FastAPI, AWS, Terraform, Kubernetes, Docker, Shell]
+
+  - role: Back End Developer
+    company: Timz
+    location: Berlin, Germany
+    period: 10/2021 - 05/2023
+    description: Back end development and sysadmin of asynchronous and synchronous video conference software.
+    bullets:
+      - Bug fixing and feature development
+      - Node.js backend implementation for efficient Google Meet call recording
+      - Development of comprehensive video data insights solution
+      - Management and maintenance of multiple video conference servers on AWS
+      - Vulnerability assessments and fixes
+      - Responsible for servers maintenance
+      - Assistance with front-end tasks
+      - Deployed essential tools like Sentry, monit, Umami and Grafana
+    tags: [Python, FastAPI, Neo4j, Docker, PostgreSQL, Node.js, AWS, Linux]
+
+  - role: Software Engineer and co-founder
+    company: Simbio
+    location: Porto Alegre, Brazil
+    period: 01/2013 - 10/2021
+    bullets:
+      - Full stack development and design of an ERP SaaS
+      - Implementation and integration of Brazilian electronic invoice system
+      - Participation in IBM SmartCamp Brazil, winning People's Vote award
+      - Recipient of Most Innovative Product award at Brazilian Retail Fair in 2017
+    tags: [Python, PostgreSQL, Django, Odoo, Linux, Nginx, Bash, CSS3, JQuery, HTML5]
+
+  - role: Full Stack Developer
+    company: PROGE
+    location: Porto Alegre, Brazil
+    period: 08/2012 - 03/2014
+    bullets:
+      - Development of new Odoo/OpenERP modules
+      - Development of open source libraries for Brazilian tax and accounting rules
+    tags: [Python, PostgreSQL, Odoo, Nginx, Bash, Third-party APIs]
+
+  - role: Full Stack Developer/Software Engineer
+    company: Solis
+    location: Lajeado, Brazil
+    period: 05/2008 - 08/2008 and 03/2009 - 08/2012
+    bullets:
+      - Framework development for Solis software
+      - Maintenance of coding standards and support for the development team
+    tags: [PHP, JavaScript, PostgreSQL, MySQL, Apache, PL/pgSQL, Bash, Dojo Toolkit]
+
+  - role: Front-end Developer
+    company: Institute for Internet Security – if(is)
+    location: Gelsenkirchen, Germany
+    period: 09/2008 - 02/2009
+    bullets:
+      - Development of IT security yellow pages portal
+      - Received a recommendation letter
+    tags: [PHP, HTML, CSS]
+
+  - role: Full Stack Developer
+    company: Distance Education Department - Univates
+    location: Lajeado, Brazil
+    period: 9/2006 – 04/2008
+    bullets:
+      - Full stack development of e-learning software TelEduc
+      - Substitute for a professor to continue research on audio and video formats for live streaming
+      - Collaboration with the TV team for live streaming preparations
+    tags: [PHP, MySQL, JavaScript, HTML, GStreamer, Apache, Linux, Bash]
+
+# footer month/year is set automatically by scripts/generate.py at generation time
