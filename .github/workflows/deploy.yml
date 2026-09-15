@@ -29,6 +29,10 @@ jobs:
 
       - name: Install uv
         uses: astral-sh/setup-uv@v10.1.0
+        with:
+          # No requirements.txt/pyproject.toml/uv.lock in this repo — generate.py
+          # declares its deps inline (PEP 723), so point the cache key at it directly.
+          cache-dependency-glob: scripts/generate.py
 
       - name: Set up Chrome
         id: setup-chrome
